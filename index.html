@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFRIO1DIGITAL Challenge Oratoire</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+    }
+    .cta-btn {
+      background: #ff5252;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .cta-btn:hover {
+      background: #e84545;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .feature {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+      text-align: center;
+    }
+    .teaser {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
+    .teaser img {
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      flex: 1;
+    }
+    .teaser-text {
+      flex: 1;
+      max-width: 500px;
+      font-size: 1.1rem;
+      color: #444;
+    }
+    .quote-section {
+      background: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+      color: rgb(32, 32, 32);
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .quote-section blockquote {
+      font-size: 1.8rem;
+      font-style: italic;
+      max-width: 800px;
+      margin: auto;
+    }
+    .ready-section {
+      background: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .ready-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .ready-section a {
+      background: #ff5252;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+    .ready-section a:hover {
+      background: #e84545;
+    }
+    .contact {
+      background: #203a43;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .contact a {
+      background: #25D366;
+      padding: 15px 35px;
+      display: inline-block;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      transition: background 0.3s ease;
+    }
+    .contact a:hover {
+      background: #1ebd5a;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .teaser {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AFRIO1DIGITAL Challenge Oratoire</h1>
+    <p>Exprime ta voix, inspire ton monde !</p>
+    <button class="cta-btn" onclick="scrollToSection('contact')">Rejoins le défi</button>
+  </header>
+
+  <section class="teaser">
+    <img src="orateur.jpg" alt="Challenge teaser image" />
+    <div class="teaser-text">
+      <h2 style="margin-bottom: 20px;">Découvre le challenge</h2>
+      <p>Plonge dans l’univers de l’art oratoire à travers ce challenge unique. Que tu sois passionné par les mots, curieux de te dépasser, ou simplement prêt à briller sous les projecteurs, ce concours est fait pour toi. Découvre l’ambiance, l’énergie et les coulisses à travers notre teaser visuel.</p>
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <blockquote>
+      "La timidité n'est pas une vertu mais une maladie"
+    </blockquote>
+  </section>
+
+  <section class="ready-section">
+    <h2>Tu es prêt à relever le défi ?</h2>
+    <a href="https://wa.me/22990149904?text=Bonjour%20je%20veux%20m%27inscrire%20au%20Challenge%20AFRIO1DIGITAL" target="_blank">📩 Je m'inscris maintenant</a>
+  </section>
+
+  <section>
+    <h2 style="text-align: center; margin-bottom: 40px;">Pourquoi participer ?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>🏆 Gagne en visibilité</h3>
+        <p>Expose ton talent à un public large et connecté.</p>
+      </div>
+      <div class="feature">
+        <h3>🎤 Développe ton éloquence</h3>
+        <p>Améliore ton expression et ta confiance en toi.</p>
+      </div>
+      <div class="feature">
+        <h3>🤝 Crée ton réseau</h3>
+        <p>Rencontre des passionnés comme toi et des mentors.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contacte-nous sur WhatsApp</h2>
+    <p>Un doute, une question ? On est là pour t’aider.</p>
+    <a href="https://wa.me/22990149904?text=Bonjour%2C%20j%27aimerais%20avoir%20des%20informations%20sur%20le%20challenge%20oratoire%20AFRIO1DIGITAL" target="_blank">📱 Écrire sur WhatsApp</a>
+  </section>
+
+  <footer>
+    &copy; 2025 AFRIO1DIGITAL. Tous droits réservés.
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      if(section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</body>
+</html>
